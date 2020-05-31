@@ -11,6 +11,7 @@ import {
   SignOutButton,
   SignOutButtonText,
 } from './styles';
+import { COLORS } from '~/constants';
 
 export default function Menu({ translateY }) {
   return (
@@ -24,7 +25,7 @@ export default function Menu({ translateY }) {
       <Code>
         <QRCode
           value="https://google.com"
-          color="#7927ad"
+          color={COLORS.PRIMARY}
           backgroundColor="#fff"
           size={80}
         />

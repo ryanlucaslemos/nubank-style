@@ -4,9 +4,11 @@ import '~/config/ReactotronConfig';
 
 import Routes from '~/routes';
 
+import { COLORS } from './constants';
+
 const App = () => (
   <>
-    <StatusBar barStyle="light-content" backgroundColor="#7927ad" />
+    <StatusBar barStyle="light-content" backgroundColor={COLORS.PRIMARY} />
     <Routes />
   </>
 );

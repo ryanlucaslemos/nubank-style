@@ -2,10 +2,11 @@ import { Animated } from 'react-native';
 import styled from 'styled-components/native';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { Platform } from 'react-native';
+import { COLORS } from '~/constants';
 
 export const Container = styled.View`
   flex: 1;
-  background: #7927ad;
+  background: ${COLORS.PRIMARY};
   padding-top: ${Platform.OS === 'ios' ? getStatusBarHeight() : '0'}px;
   justify-content: center;
 `;
